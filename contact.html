@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="TG Poaty" content="Gecks-for-Gecks page" />
+    <title>Contact Event page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="div__body">
+      <header class="contact__header">
+        <section class="contact__title">
+          <h1 class="contact__h1">
+            Welcome to GeeksforGeeks TechCon <time id="year"> </time>
+          </h1>
+          <p class="contact__h1p">
+            The ultimate Technology and Programming Conference
+          </p>
+        </section>
+        <section class="contact__listhost">
+          <nav class="contact__nav">
+            <ul class="contact__ul">
+              <li><a href="index.html">About</a></li>
+              <li><a href="schedule.html">schedule</a></li>
+              <li><a href="speaker.html">Speaker</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <main>
+        <div class="two-boxes">
+          <div class="box-wrapper">
+            <h2 class="box-title">Get In Touch With Us Now!</h2>
+            <div class="box1">
+              <div class="insideLeft-box top-left">
+                <p style="font-size: 45px">📞</p>
+                <p style="font-size: 19px">Phone Number +</p>
+                <p style="font-size: 18px">+27611070401</p>
+              </div>
+              <div class="insideLeft-box top-right">
+                <p style="font-size: 45px">✉️</p>
+                <p style="font-size: 19px">Email</p>
+                <p style="font-size: 18px">tom.jonhs300@gmail.com</p>
+              </div>
+              <div class="insideLeft-box bottom-left">
+                <p style="font-size: 45px">📍</p>
+                <p style="font-size: 19px">Location</p>
+                <p style="font-size: 18px">42 Rosehope Main Road Rosebank</p>
+              </div>
+              <div class="insideLeft-box bottom-right">
+                <p style="font-size: 45px">🕞</p>
+                <p style="font-size: 19px">Working Hours</p>
+                <p style="font-size: 18px">Monday to Friday</p>
+                <p style="font-size: 18px" class="Hours">
+                  From 8h:00 to 17h:00
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box-wrapper">
+            <h2 class="box-title">Contact Us</h2>
+            <div class="box2">
+              <form
+                action="https://httpbin.org/get"
+                method="get"
+                class="contact-form"
+              >
+                <fieldset class="contact-fieldset">
+                  <div class="container-fieldWrapper">
+                    <div class="contact-div color1">
+                      <label class="contact-label" for="FirstName"
+                        >First Name:</label
+                      >
+                      <input
+                        class="contact-input"
+                        type="text"
+                        name="FirstName"
+                        id="FirstName"
+                        placeholder="Your First name"
+                        autocomplete="on"
+                        autofocus
+                        required
+                      />
+                    </div>
+                    <div class="contact-div color2">
+                      <label class="contact-label" for="LastName"
+                        >Last Name:</label
+                      >
+                      <input
+                        class="contact-input"
+                        type="text"
+                        name="LastName"
+                        id="LastName"
+                        placeholder="Your Last name"
+                        required
+                      />
+                    </div>
+                    <div class="contact-div color3">
+                      <label class="contact-label" for="Phone">Phone:</label>
+                      <input
+                        class="contact-input"
+                        type="tel"
+                        name="Phone"
+                        id="Phone"
+                        placeholder="Format: 123-456-7890"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required
+                      />
+                    </div>
+                    <div class="contact-div color4">
+                      <label class="contact-label" for="Email">Email:</label>
+                      <input
+                        class="contact-input"
+                        type="email"
+                        name="Email"
+                        id="Email"
+                        placeholder="Your email"
+                        required
+                      />
+                    </div>
+                    <div class="contact-div color5">
+                      <label class="contact-label" for="Message">
+                        Your Message:</label
+                      >
+                      <textarea
+                        class="contact-textarea"
+                        name="Message"
+                        id="Message"
+                        placeholder="Your message here"
+                        cols="30"
+                        rows="8"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="contact-inputs container-fieldWrapper">
+                  <div class="button-submit">
+                    <button
+                      class="contact-button"
+                      type="submit"
+                      formaction="https:httpbin.org/post"
+                      formmethod="post"
+                    >
+                      submit
+                    </button>
+                  </div>
+                  <div class="button-reset">
+                    <button class="contact-button" type="reset">Reset</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="contact-footer">
+        <footer>
+          <p>
+            <span>Design using HTML & CSS by TG Poaty 2025 </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
